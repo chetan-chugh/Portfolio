@@ -14,10 +14,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-16 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 flex flex-col items-start gap-2 px-4 py-3 sm:px-6 md:flex-row md:items-center md:justify-between md:gap-6 lg:px-16 transition-all duration-300 ${
         scrolled
-          ? 'py-4 bg-bg/85 backdrop-blur-2xl border-b border-line'
-          : 'py-6'
+          ? 'bg-bg/90 backdrop-blur-2xl border-b border-line md:py-4'
+          : 'bg-bg/70 backdrop-blur-xl md:bg-transparent md:backdrop-blur-none md:py-6'
       }`}
     >
       {/* Logo: Inter 800 — heaviest weight, clearest identity signal */}
@@ -26,7 +26,7 @@ export default function Navbar() {
       </div>
 
       {/* Links: Fira Code mono — distinguishes nav from all other text types */}
-      <div className="flex items-center gap-10">
+      <div className="flex w-full flex-wrap items-center gap-x-5 gap-y-1 md:w-auto md:gap-6 lg:gap-10">
         {NAV_LINKS.map((link) => (
           <a
             key={link}

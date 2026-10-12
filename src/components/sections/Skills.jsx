@@ -12,14 +12,14 @@ const CATEGORY_META = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative z-10 px-16 py-28">
+    <section id="skills" className="relative z-10 px-4 py-16 sm:px-6 sm:py-20 lg:px-16 lg:py-28">
       <SectionHeader
         label="Technical Skills"
         title="My tech stack"
         sub="Every tool I use in production."
       />
 
-      <div className="grid grid-cols-3 gap-4 mt-14">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 mt-10 sm:mt-14">
         {SKILLS.map((skill, i) => {
           const meta = CATEGORY_META[skill.cat] || { icon: '◆', color: '#4F6EF7', bg: 'rgba(79,110,247,0.08)' }
           return (

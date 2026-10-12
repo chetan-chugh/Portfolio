@@ -11,6 +11,8 @@
     font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11'; /* Inter optical fixes */
   }
 
+  section[id] { scroll-margin-top: 6rem; }
+
   body {
     background-color: #080810;
     color: #EEEEF8;
@@ -67,6 +69,15 @@
   ::-webkit-scrollbar { width: 4px; }
   ::-webkit-scrollbar-track { background: #080810; }
   ::-webkit-scrollbar-thumb { background: #222236; border-radius: 2px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 @layer utilities {

@@ -3,18 +3,19 @@ import { PROJECTS } from '../../data'
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative z-10 px-16 py-28 bg-bg-2 border-t border-b border-line">
+    <section id="projects" className="relative z-10 px-4 py-16 sm:px-6 sm:py-20 lg:px-16 lg:py-28 bg-bg-2 border-t border-b border-line">
       <SectionHeader
         label="Projects"
         title="Things I've built"
-        sub="Real products, shipped to production, used by real users."
+        sub={<>Here are some of the major SaaS projects I’ve worked on—<span className="whitespace-nowrap">real-world</span> products that have been successfully launched in production and are used by real users.</>}
+        subClassName="max-w-[70ch]"
       />
 
-      <div className="flex flex-col gap-6 mt-14">
+      <div className="flex flex-col gap-4 sm:gap-6 mt-10 sm:mt-14">
         {PROJECTS.map((project, idx) => (
           <div
             key={project.title}
-            className="reveal group relative bg-bg-card border border-line rounded-2xl overflow-hidden transition-all duration-300 hover:border-line-2 hover:-translate-y-1 hover:shadow-[0_32px_80px_rgba(0,0,0,0.55)]"
+            className="group relative bg-bg-card border border-line rounded-2xl overflow-hidden transition-all duration-300 hover:border-line-2 hover:-translate-y-1 hover:shadow-[0_32px_80px_rgba(0,0,0,0.55)]"
           >
             {/* Left accent bar */}
             <div
@@ -36,11 +37,11 @@ export default function Projects() {
               {project.num}
             </div>
 
-            <div className="pl-8 pr-9 pt-8 pb-9">
+            <div className="pl-5 pr-5 py-6 sm:pl-8 sm:pr-9 sm:pt-8 sm:pb-9">
 
               {/* Top row: number + tags */}
               <div className="flex items-start justify-between gap-4 mb-6">
-                <div className="flex items-center gap-3">
+                <div className="flex min-w-0 flex-wrap items-center gap-3">
                   {/* Project number pill */}
                   <span
                     className="label-mono text-[10px] px-2.5 py-1 rounded-md font-medium"
@@ -74,7 +75,7 @@ export default function Projects() {
               {/* Title */}
               <h3
                 className="font-bold text-ink mb-3 tracking-[-0.03em]"
-                style={{ fontSize: '24px', lineHeight: '1.2' }}
+                style={{ fontSize: 'clamp(21px, 3vw, 24px)', lineHeight: '1.2' }}
               >
                 {project.title}
               </h3>

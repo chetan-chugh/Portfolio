@@ -8,7 +8,7 @@
  * Spacing: 12px between label → title, 10px between title → sub.
  * Max-width on sub: 50ch — prevents lines longer than ~8 words, keeps it scannable.
  */
-export default function SectionHeader({ label, title, sub }) {
+export default function SectionHeader({ label, title, sub, subClassName = '' }) {
   return (
     <div className="reveal">
       {/* Label: Fira Code mono — technical, precise, distinct from heading */}
@@ -24,7 +24,7 @@ export default function SectionHeader({ label, title, sub }) {
 
       {/* Sub: Inter 300 (light), ink-2 — recedes behind heading deliberately */}
       {sub && (
-        <p className="text-[16px] text-ink-2 leading-[1.8] font-light max-w-[50ch]">
+        <p className={`text-[16px] text-ink-2 leading-[1.8] font-light max-w-[50ch] ${subClassName}`}>
           {sub}
         </p>
       )}

@@ -3,18 +3,18 @@ import { ABOUT_CARDS } from '../../data'
 
 export default function About() {
   return (
-    <section id="about" className="relative z-10 px-16 py-28 bg-bg-2 border-t border-b border-line">
+    <section id="about" className="relative z-10 px-4 py-16 sm:px-6 sm:py-20 lg:px-16 lg:py-28 bg-bg-2 border-t border-b border-line">
       <SectionHeader
         label="About me"
         title={<>Full Stack developer</>}
       />
 
-      <div className="grid grid-cols-2 gap-20 mt-14 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 mt-10 sm:mt-14 items-start">
 
         {/* Text */}
         <div className="reveal reveal-d1 space-y-5">
           {[
-            <>I'm a <strong className="text-ink font-medium">Full-Stack Developer</strong> with 8 month's of hands-on production experience. I take complete ownership of projects — from requirement gathering through to production deployment.</>,
+            <>I'm a <strong className="text-ink font-medium">Full-Stack Developer</strong> with 2+ years of hands-on production experience. I take complete ownership of projects — from requirement gathering through to production deployment.</>,
             <>Currently at <strong className="text-ink font-medium">Exotica IT Solutions</strong>, managing multiple client projects simultaneously, collaborating with designers and backend teams to deliver robust, user-friendly solutions on strict deadlines.</>,
             <>I specialize in <strong className="text-ink font-medium">AI-integrated platforms</strong>, real-time features, subscription systems, and multi-role dashboards — all shipped with clean, maintainable code.</>,
             <>Pursuing my <strong className="text-ink font-medium">MCA from Guru Jambheshwar University</strong> (2025–2027) alongside full-time work.</>,
