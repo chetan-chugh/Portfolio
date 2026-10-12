@@ -1,9 +1,9 @@
-export const NAV_LINKS = ['About', 'Skills', 'Projects', 'Experience']
+export const NAV_LINKS = ['About', 'Skills', 'Projects', 'Experience', 'Contact']
 
 export const HERO_STATS = [
-  { num: '8', label: 'Months Exp.' },
-  { num: '7', label: 'Projects Shipped' },
-  { num: '3', label: 'Live Platforms' },
+  { num: '2+', label: 'Years Exp.' },
+  { num: '10+', label: 'Projects Shipped' },
+  // { num: '3', label: 'Live Platforms' },
 ]
 
 export const ABOUT_CARDS = [
@@ -14,10 +14,10 @@ export const ABOUT_CARDS = [
 ]
 
 export const SKILLS = [
-  { cat: 'Frontend', items: ['React.js', 'Tailwind CSS', 'HTML5', 'CSS3'] },
-  { cat: 'Backend', items: ['Python', 'Django', 'Firebase', 'REST APIs'] },
-  { cat: 'Databases', items: ['PostgreSQL', 'MySQL', 'Redis'] },
-  { cat: 'DevOps & Tools', items: ['Docker', 'Git', 'GitHub', 'Linux', 'DSA'] },
+  { cat: 'Frontend', items: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Tailwind CSS'] },
+  { cat: 'Backend', items: ['Node.js', 'Express.js', 'Python', 'Firebase', 'REST APIs'] },
+  { cat: 'Databases', items: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis'] },
+  { cat: 'DevOps & Tools', items: ['Docker', 'Git', 'GitHub', 'Linux'] },
   { cat: 'Specializations', items: ['AI Integrations', 'Real-time Systems', 'Multi-role Platforms', 'Subscription Billing'] },
   { cat: 'Currently Learning', items: ['AWS', 'GraphQL', 'System Design'] },
 ]
@@ -49,19 +49,19 @@ export const PROJECTS = [
     features: ['AI contract extraction', 'Auto task timelines', 'Real-time dashboard', 'Professional hiring flow', 'Multi-channel alerts'],
     glowColor: '#06B6D4',
   },
-  // {
-  //   num: '03',
-  //   title: 'Goalmogul',
-  //   tags: ['MERN Stack', 'AI Chatbot', 'Goal Tracking'],
-  //   tagColors: [
-  //     { bg: 'rgba(124,58,237,.15)', color: '#A78BFA', border: 'rgba(124,58,237,.25)' },
-  //     { bg: 'rgba(79,110,247,.15)', color: '#818CF8', border: 'rgba(79,110,247,.25)' },
-  //     { bg: 'rgba(6,182,212,.15)', color: '#22D3EE', border: 'rgba(6,182,212,.25)' },
-  //   ],
-  //   desc: "Full-stack reminder workflows enabling 'For Me' and 'For Other' goal contexts with AI-powered interactions. Built smart action buttons integrated with Node.js/Express APIs to trigger AI-generated steps and chatbot messages with tone-adaptive personalized follow-ups.",
-  //   features: ['AI chatbot workflows', 'Tone-adaptive responses', 'Smart action buttons', 'Personalized follow-ups'],
-  //   glowColor: '#7C3AED',
-  // },
+  {
+    num: '03',
+    title: 'Goalmogul',
+    tags: ['MERN Stack', 'AI Chatbot', 'Goal Tracking'],
+    tagColors: [
+      { bg: 'rgba(124,58,237,.15)', color: '#A78BFA', border: 'rgba(124,58,237,.25)' },
+      { bg: 'rgba(79,110,247,.15)', color: '#818CF8', border: 'rgba(79,110,247,.25)' },
+      { bg: 'rgba(6,182,212,.15)', color: '#22D3EE', border: 'rgba(6,182,212,.25)' },
+    ],
+    desc: "Full-stack reminder workflows enabling 'For Me' and 'For Other' goal contexts with AI-powered interactions. Built smart action buttons integrated with Node.js/Express APIs to trigger AI-generated steps and chatbot messages with tone-adaptive personalized follow-ups.",
+    features: ['AI chatbot workflows', 'Tone-adaptive responses', 'Smart action buttons', 'Personalized follow-ups'],
+    glowColor: '#7C3AED',
+  },
 ]
 
 export const EXPERIENCE = [
@@ -72,13 +72,13 @@ export const EXPERIENCE = [
     location: 'Mohali, Punjab',
     desc: 'Taking ownership of complete project lifecycles across multiple client projects — from requirement gathering and planning to development, testing, and production deployment. Collaborating with designers, project managers, and backend teams to deliver robust solutions while maintaining clean code standards.',
   },
-  // {
-  //   period: 'Nov 2024 – Oct 2025',
-  //   role: 'MERN Stack Developer',
-  //   company: 'ArthTech Supports Pvt. Ltd.',
-  //   location: 'Mohali, Punjab',
-  //   desc: 'Led end-to-end development and deployment of scalable web applications and APIs, ensuring high performance and on-time delivery. Integrated real-time features, automated workflows, and enhanced system efficiency through optimized processes across multiple projects.',
-  // },
+  {
+    period: 'Nov 2024 – Oct 2025',
+    role: 'MERN Stack Developer',
+    company: 'ArthTech Supports Pvt. Ltd.',
+    location: 'Mohali, Punjab',
+    desc: 'Led end-to-end development and deployment of scalable web applications and APIs, ensuring high performance and on-time delivery. Integrated real-time features, automated workflows, and enhanced system efficiency through optimized processes across multiple projects.',
+  },
   {
     period: 'Jan 2024 – Jun 2024',
     role: 'MERN Stack Training',
